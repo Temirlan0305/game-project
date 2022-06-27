@@ -239,7 +239,7 @@ $(document).ready(function () {
 });
 
 $(document).ready(function () {
-	$('.search-mentor__row').slick({
+	$('.search-mentor__slider').slick({
 		dots: false,
 		slidesToShow: 5,
 		slidesToScroll: 1,
@@ -355,9 +355,94 @@ var swiper2 = new Swiper(".swiper-container5", {
 	},
 });
 
+let select = function () {
+	let selectHeader = document.querySelectorAll('.select__header');
+	let selectItem = document.querySelectorAll('.select__item');
+
+	selectHeader.forEach(item => {
+		item.addEventListener('click', selectToggle)
+	});
+
+	selectItem.forEach(item => {
+		item.addEventListener('click', selectChoose)
+	});
+
+	function selectToggle() {
+		this.parentElement.classList.toggle('is-active');
+	}
+
+	function selectChoose() {
+			let text = this.innerText,
+				select = this.closest('.select'),
+				currentText = select.querySelector('.select__current');
+			currentText.innerText = text;
+			select.classList.remove('is-active');
+
+	}
+
+};
+select();
 
 
- 
+$('#form').validate({
+	rules: {
+		email: {
+			required: true,
+			email: true,
+		},
+		name: {
+			required: true,
+			minlength: 3,
+		},
+		// checked: {
+		// 	required: true,
+		// }
+		password: {
+			required: true,
+         minlength: 5,
+		},
+		password_again: {
+			required: true,
+			equalTo: "#password"
+		}
+	},
+	messages: {
+		email: {
+			required: 'Поле email обязательно для заполнения',
+			email: 'Поле email не корректно заполнено'
+		},
+		name: {
+			required: 'Имя обьязательно должно быт заполнено',
+			minlength: 'Длина имени должно быть более 3-х символов',
+		},
+		password_again: {
+			required: 'Введите пароль',
+			equalTo: "Пожалуйста, введите то же значение еще раз"
+		},
+		password: {
+			required: 'Введите пароль',
+         minlength: 'Не надежный пароль, введите минимум 5 символов',
+		},
+	}
+});
+$(document).ready(function () {
+	$("#inputPhone").mask("8 (999) 999-99-99");
+});
+
+let clickPassword = document.querySelectorAll('.registration-form__password');
+clickPassword.forEach((elem) => {
+	let passClick = elem.querySelector('.registration__input');
+	let passBtn = elem.querySelector('.password-control')
+	passBtn.addEventListener('click', function() {
+		if(!passBtn.classList.contains('active')) {
+			passBtn.classList.add('active');
+			passClick.type = "text";
+		} else {
+			passBtn.classList.remove('active');
+			passClick.type = "password";
+		}
+	});
+});
 // let swiperOne = document.querySelector('.swiperTwo');
 
 // if (swiperOne) {

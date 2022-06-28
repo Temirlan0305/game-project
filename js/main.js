@@ -14,12 +14,6 @@ window.addEventListener("scroll", function(e) {
 const menuBurger = document.querySelector('.menu__burger');
 if (menuBurger) {
    const headerMenu = document.querySelector('.header-block__fixed');
-	const headerMenuClose = document.querySelector('.header-block__close');
-	headerMenuClose.addEventListener('click', function () {
-		menuBurger.classList.remove('_active');
-      headerMenu.classList.remove('_active');
-		document.body.classList.remove('_actived')
-	});
    menuBurger.addEventListener("click", function (e) {
 			menuBurger.classList.toggle('_active');
 			headerMenu.classList.toggle('_active');
@@ -32,6 +26,28 @@ if (menuBurger) {
 			document.body.classList.remove('_actived')
 		}
 	})
+
+// const menuBurger = document.querySelector('.menu__burger');
+// if (menuBurger) {
+//    const headerMenu = document.querySelector('.header-block__fixed');
+// 	const headerMenuClose = document.querySelector('.header-block__close');
+// 	headerMenuClose.addEventListener('click', function () {
+// 		menuBurger.classList.remove('_active');
+//       headerMenu.classList.remove('_active');
+// 		document.body.classList.remove('_actived')
+// 	});
+//    menuBurger.addEventListener("click", function (e) {
+// 			menuBurger.classList.toggle('_active');
+// 			headerMenu.classList.toggle('_active');
+// 			document.body.classList.toggle('_actived')
+//    });
+// 	document.addEventListener('click', function (event) {
+// 		if (event.target.classList.contains('header-block__fixed')) {
+// 			menuBurger.classList.remove('_active');
+// 			headerMenu.classList.remove('_active');
+// 			document.body.classList.remove('_actived')
+// 		}
+// 	})
 }
 
 $(document).on("click", function(event){
@@ -384,50 +400,114 @@ let select = function () {
 select();
 
 
-$('#form').validate({
-	rules: {
-		email: {
-			required: true,
-			email: true,
+let formBlock = document.getElementById('form');
+let formTwo = document.getElementById('form__two');
+if (formBlock) {
+	$('#form').validate({
+		rules: {
+			email: {
+				required: true,
+				email: true,
+			},
+			name: {
+				required: true,
+				minlength: 3,
+			},
+			// checked: {
+			// 	required: true,
+			// }
+			password: {
+				required: true,
+				minlength: 5,
+			},
+			password_again: {
+				required: true,
+				equalTo: "#password"
+			}
 		},
-		name: {
-			required: true,
-			minlength: 3,
-		},
-		// checked: {
-		// 	required: true,
-		// }
-		password: {
-			required: true,
-         minlength: 5,
-		},
-		password_again: {
-			required: true,
-			equalTo: "#password"
+		messages: {
+			email: {
+				required: 'Поле email обязательно для заполнения',
+				email: 'Поле email не корректно заполнено'
+			},
+			name: {
+				required: 'Имя обьязательно должно быт заполнено',
+				minlength: 'Длина имени должно быть более 3-х символов',
+			},
+			password_again: {
+				required: 'Введите пароль',
+				equalTo: "Пожалуйста, введите то же значение еще раз"
+			},
+			password: {
+				required: 'Введите пароль',
+				minlength: 'Не надежный пароль, введите минимум 5 символов',
+			},
 		}
-	},
-	messages: {
-		email: {
-			required: 'Поле email обязательно для заполнения',
-			email: 'Поле email не корректно заполнено'
+	});
+	$(document).ready(function () {
+		$("#inputPhone").mask("8 (999) 999-99-99");
+		$("#phone").mask("8 (999) 999-99-99");
+	});
+}
+if (formTwo) {
+	$('#form__two').validate({
+		rules: {
+			name: {
+				required: true,
+				minlength: 3,
+			},
+			text: {
+				required: true,
+				minlength: 3,
+			},
+			nomer: {
+				required: true,
+				minlength: 11,
+			},
+			password: {
+				required: true,
+				minlength: 5,
+			},
+			passwor1: {
+				required: true,
+				minlength: 5,
+			},
+			password_again: {
+				required: true,
+				equalTo: "#password"
+			}
 		},
-		name: {
-			required: 'Имя обьязательно должно быт заполнено',
-			minlength: 'Длина имени должно быть более 3-х символов',
-		},
-		password_again: {
-			required: 'Введите пароль',
-			equalTo: "Пожалуйста, введите то же значение еще раз"
-		},
-		password: {
-			required: 'Введите пароль',
-         minlength: 'Не надежный пароль, введите минимум 5 символов',
-		},
-	}
-});
-$(document).ready(function () {
-	$("#inputPhone").mask("8 (999) 999-99-99");
-});
+		messages: {
+			name: {
+				required: 'Имя обьязательно должно быт заполнено',
+				minlength: 'Длина имени должно быть более 3-х символов',
+			},
+			nomer: {
+				required: 'Соц сеть обьязательно должно быт заполнено',
+				minlength: 'Длина номера должно быть более 11-х цифров',
+			},
+			text: {
+				required: 'Форма обьязательно должно быт заполнено',
+				minlength: 'Длина имени должно быть более 3-х символов',
+			},
+			password_again: {
+				required: 'Введите пароль',
+				equalTo: "Пожалуйста, введите то же значение еще раз"
+			},
+			password: {
+				required: 'Введите пароль',
+				minlength: 'Не надежный пароль, введите минимум 5 символов',
+			},
+			password1: {
+				required: 'Введите старый пароль',
+				minlength: 'Не надежный пароль, введите минимум 5 символов',
+			},
+		}
+	});
+	$(document).ready(function () {
+		$("#phone").mask("8 (999) 999-99-99");
+	});
+}
 
 let clickPassword = document.querySelectorAll('.registration-form__password');
 clickPassword.forEach((elem) => {
@@ -443,6 +523,86 @@ clickPassword.forEach((elem) => {
 		}
 	});
 });
+
+const imgDiv = document.querySelector('.profile-image');
+const img = document.querySelector('#photo');
+const file = document.querySelector('#file');
+const uploadBtn = document.querySelector('#uploadBtn');
+
+// imgDiv.addEventListener('mouseenter', function(){
+//    uploadBtn.style.display = "block";
+// });
+// imgDiv.addEventListener('mouseleave', function(){
+//    uploadBtn.style.display = "none";
+// });
+
+file.addEventListener('change', function(){
+   const choosedFile = this.files[0];
+   if (choosedFile) {
+      const reader = new FileReader();
+      reader.addEventListener('load', function(){
+			if(!img.classList.contains('active')) {
+				img.classList.add('active');
+			}
+         img.setAttribute('src', reader.result);
+      });
+      reader.readAsDataURL(choosedFile);
+   }
+});
+
+
+let editBlock = document.querySelectorAll('.profile-bottom__item')
+editBlock.forEach((elem) => {
+	let editBtn = elem.querySelector('.profile-bottom__edit');
+		editBtn.addEventListener('click', function () {
+			let editInput = elem.querySelectorAll('.input');
+			if (!editBtn.classList.contains('active')) {
+				editBtn.classList.add('active');
+				console.log(editInput)
+				editInput.forEach((el) => {
+					el.classList.add('active');
+					el.removeAttribute('readonly')
+				});
+			} else {
+				editBtn.classList.remove('active')
+				editInput.forEach((el) => {
+					el.classList.remove('active');
+					el.setAttribute('readonly', 'true')
+				});
+			}
+		});
+})
+
+const profileTabsBtn = document.querySelectorAll('.profile-right__tab');
+const profileTabItems = document.querySelectorAll('.profile-right__item');
+profileTabsBtn.forEach(function (item) {
+	item.addEventListener('click', function () {
+		let currentBtn = item;
+		let tabId = currentBtn.getAttribute('data-click');
+		let currentTab = document.querySelector(tabId);
+
+		if (!currentBtn.classList.contains('active')) {
+
+			profileTabsBtn.forEach(function (item) {
+				item.classList.remove('active');
+			});
+			profileTabItems.forEach(function (item) {
+				item.classList.remove('active');
+			});
+			currentBtn.classList.add('active');
+			currentTab.classList.add('active');
+		}
+		// } else {
+		// 	profileTabsBtn.forEach(function (item) {
+		// 		item.classList.remove('active');
+		// 	});
+		// 	tabItems.forEach(function (item) {
+		// 		item.classList.remove('active');
+		// 	});
+		// }
+	});
+});
+
 // let swiperOne = document.querySelector('.swiperTwo');
 
 // if (swiperOne) {

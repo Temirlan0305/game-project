@@ -236,8 +236,14 @@ $(document).ready(function () {
 		speed: 800,
 		prevArrow: '<button type="button" class="slick_arrow slick_prev"><svg width="14" height="26" viewBox="0 0 14 26" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13 1L1 13L13 25" stroke="black" stroke-linecap="round" stroke-linejoin="round"/></svg></button>',
 		nextArrow: '<button type="button" class="slick_arrow slick_next"><svg width="14" height="26" viewBox="0 0 14 26" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L13 13L1 25" stroke="black" stroke-linecap="round" stroke-linejoin="round"/></svg></button>',
-		// autoplay: true,
-		// autoplaySpeed: 800,
+		responsive: [
+			{
+				breakpoint: 400,
+				settings: {
+					slidesToShow: 1,
+				},
+			},
+		],
 	});
 });
 
@@ -251,6 +257,14 @@ $(document).ready(function () {
 		nextArrow: '<button type="button" class="slick_arrow slick_next"><span><svg width="9" height="17" viewBox="0 0 9 17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.00005 8.49996C9.00005 8.69759 8.92673 8.89541 8.7803 9.04628L1.2803 16.7735C0.987234 17.0755 0.512672 17.0755 0.219797 16.7735C-0.0730781 16.4716 -0.0732656 15.9827 0.219797 15.6809L7.18955 8.49996L0.219797 1.31902C-0.0732656 1.01708 -0.0732656 0.528135 0.219797 0.226385C0.512859 -0.0753644 0.987421 -0.0755576 1.2803 0.226385L8.7803 7.95365C8.92673 8.10452 9.00005 8.30234 9.00005 8.49996Z" fill="#FF335A"/></svg></span></button>',
 		// autoplay: true,
 		// autoplaySpeed: 800,
+		responsive: [
+			{
+				breakpoint: 1200,
+				settings: {
+					slidesToShow: 4,
+				},
+			},
+		],
 	});
 });
 
@@ -345,6 +359,24 @@ let swiperThree = new Swiper(sliderThree, {
 	scrollbar: {
 		el: '.swiper-scrollbar',
 		draggable: true,
+	},
+	breakpoints: {
+		1000: {
+			slidesPerView: 1.8,
+			spaceBetween: 200,
+		},
+		768: {
+			slidesPerView: 2,
+			spaceBetween: 150,
+		},
+		575: {
+			slidesPerView: 1.6,
+			spaceBetween: 100,
+		}, 
+		300: {
+			slidesPerView: 1,
+			spaceBetween: 100,
+		}, 
 	},
 });	
 var swiper = new Swiper(sliderFour, {

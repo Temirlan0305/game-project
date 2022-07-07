@@ -308,7 +308,7 @@ body.compensate-for-scrollbar {
 
 .fancybox-button:focus,
 .fancybox-button:hover {
-  color: #fff; }
+  color: #B5B5B5; }
 
 .fancybox-button.disabled,
 .fancybox-button.disabled:hover,
@@ -372,20 +372,20 @@ body.compensate-for-scrollbar {
 .fancybox-close-small {
     border: 0;
     border-radius: 0;
-    color: #FFF;
+    color: #B5B5B5;
     cursor: pointer;
-    height: 30px;
+    height: 24px;
     margin: 0;
-    padding: 6px;
+    padding: 3px;
     position: absolute;
     right: 40px;
     top: 40px;
-    width: 30px;
+    width: 24px;
     z-index: 10;
     border-radius: 50%;
-    background-color: #C8CBD1;
+    background-color: #FFF;
+    border: 2px solid #B5B5B5;
 }
-
 .fancybox-close-small svg {
   fill: transparent;
   opacity: .8;

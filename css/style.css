@@ -2546,34 +2546,6 @@ ul, p {
     color: #3E1A79;
     padding: 48px 48px 48px 0;
 }
-.gamepractice-image__link {
-    position: absolute;
-    width: 24px;
-    height: 24px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.gamepractice-image__two .gamepractice-image__link img {
-    width: 100%;
-    height: 100%;
-    z-index: 5;
-    position: static;
-    bottom: 0;
-    border-radius: 0;
-}
-.link-top {
-    bottom: 55px;
-    right: 14px;
-}
-.link-center {
-    bottom: 24px;
-    right: 36px;
-}
-.link-bottom {
-    bottom: -2px;
-    right: 66px;
-}
 
 /*----------------------------mentors---------------------------------------*/
 
@@ -5633,22 +5605,6 @@ ul, p {
     .pupils-mentor__image img {
         bottom: 26px;
     }
-    .link-top {
-        bottom: 70px;
-        right: -1px;
-    }
-    .link-center {
-        bottom: 35px;
-        right: 19px;
-    }
-    .link-bottom {
-        bottom: 7px;
-        right: 50px;
-    }
-    .gamepractice-image__link {
-        width: 22px;
-        height: 22px;
-    }
 }
 @media (max-width: 1440.98px) {
     .container {
@@ -6861,22 +6817,6 @@ ul, p {
         height: 230px;
         border-radius: 0 0 0 133px;
         background-size: 90% 100%;
-    }
-    .link-top {
-        bottom: 70px;
-        right: -1px;
-    }
-    .link-center {
-        bottom: 35px;
-        right: 19px;
-    }
-    .link-bottom {
-        bottom: 7px;
-        right: 50px;
-    }
-    .gamepractice-image__link {
-        width: 20px;
-        height: 20px;
     }
 }
 @media (max-width: 1199.98px) {

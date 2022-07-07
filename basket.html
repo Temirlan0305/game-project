@@ -144,7 +144,7 @@
 											<label>Выберите способ оплаты <span>*</span></label>
 											<div class="select-two__wrapper">
 												<select name="select-category" id="payment" class="select__two">
-													<option selected disabled hidden>не выбрано</option>
+													<option class="placeholder-select" selected disabled hidden>не выбрано</option>
 													<option value="1">Банковские карты</option>
 													<option value="2">Наличные курьеру</option>
 												</select>
@@ -157,6 +157,7 @@
 											<label>Выберите способ доставки <span>*</span></label>
 											<div class="select-two__wrapper">
 												<select name="select-category" id="delivery" class="select__two">
+													<option class="placeholder-select" selected disabled hidden>не выбрано</option>
 													<option value="methodDelivery1">Самовывоз</option>
 													<option value="methodDelivery2">Доставка</option>
 												</select>
@@ -165,23 +166,16 @@
 										<div class="basket-form__block">
 											<label>Выберите город <span>*</span></label>
 											<div class="select-two__wrapper">
-												<select name="select-category" id="rate" class="select__two select-gorod">
-													<option value="option1" data-value="1">Нур-Султан</option>
-													<option value="option2" data-value="2">Алматы</option>
-													<option value="option3" data-value="3">Караганда</option>
-													<option value="option4" data-value="4">Атырау</option>
-													<option value="option5" data-value="5">Костанай</option>
-													<option value="option6" data-value="6">Шымкент</option>
+												<select name="select-category" class="select__two select-gorod">
+													<option class="placeholder-select" selected disabled hidden>не выбрано</option>
+													<option value="option1">Нур-Султан</option>
+													<option value="option2">Алматы</option>
+													<option value="option3">Караганда</option>
+													<option value="option4">Атырау</option>
+													<option value="option5">Костанай</option>
+													<option value="option6">Шымкент</option>
 												</select>
-											</div>
-											<div class="select__btn">
-												<a href="#option1" class="item tab active">Нур-Султан</a>
-												<a href="#option2" class="item tab">Алматы</a>
-												<a href="#option3" class="item tab">Караганда</a>
-												<a href="#option4" class="item tab">Атырау</a>
-												<a href="#option5" class="item tab">Костанай</a>
-												<a href="#option6" class="item tab">Шымкент</a>
-											</div>											  
+											</div>									  
 										</div>
 										<div class="basket-form__block">
 											<label>Адрес доставки <span>*</span></label>
@@ -280,7 +274,7 @@
                            </div>
                            <div class="basket-right__comment">
                               <label for="comment">Комментарий к заказу</label>
-                              <textarea name="comment" id="comment" class="basket-product__textarea">Я хочу ...</textarea>
+                              <textarea name="comment" id="comment" class="basket-product__textarea" placeholder="Я хочу ..."></textarea>
                            </div>
                            <div class="basket-right__price">
                               <div class="basket-right__subtitle">

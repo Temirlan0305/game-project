@@ -208,26 +208,6 @@ $(document).ready(function () {
 		nextArrow: '<button type="button" class="slick_arrow slick_next"><svg width="14" height="26" viewBox="0 0 14 26" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L13 13L1 25" stroke="black" stroke-linecap="round" stroke-linejoin="round"/></svg></button>',
 		// autoplay: true,
 		// autoplaySpeed: 800,
-		responsive: [
-			{
-				breakpoint: 991,
-				settings: {
-					slidesToShow: 3,
-				},
-			},
-			{
-				breakpoint: 770,
-				settings: {
-					slidesToShow: 2,
-				},
-			},
-			{
-				breakpoint: 450,
-				settings: {
-					slidesToShow: 1,
-				},
-			},
-		],
 	});
 });
 
@@ -256,14 +236,8 @@ $(document).ready(function () {
 		speed: 800,
 		prevArrow: '<button type="button" class="slick_arrow slick_prev"><svg width="14" height="26" viewBox="0 0 14 26" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13 1L1 13L13 25" stroke="black" stroke-linecap="round" stroke-linejoin="round"/></svg></button>',
 		nextArrow: '<button type="button" class="slick_arrow slick_next"><svg width="14" height="26" viewBox="0 0 14 26" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L13 13L1 25" stroke="black" stroke-linecap="round" stroke-linejoin="round"/></svg></button>',
-		responsive: [
-			{
-				breakpoint: 400,
-				settings: {
-					slidesToShow: 1,
-				},
-			},
-		],
+		// autoplay: true,
+		// autoplaySpeed: 800,
 	});
 });
 
@@ -277,26 +251,6 @@ $(document).ready(function () {
 		nextArrow: '<button type="button" class="slick_arrow slick_next"><span><svg width="9" height="17" viewBox="0 0 9 17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.00005 8.49996C9.00005 8.69759 8.92673 8.89541 8.7803 9.04628L1.2803 16.7735C0.987234 17.0755 0.512672 17.0755 0.219797 16.7735C-0.0730781 16.4716 -0.0732656 15.9827 0.219797 15.6809L7.18955 8.49996L0.219797 1.31902C-0.0732656 1.01708 -0.0732656 0.528135 0.219797 0.226385C0.512859 -0.0753644 0.987421 -0.0755576 1.2803 0.226385L8.7803 7.95365C8.92673 8.10452 9.00005 8.30234 9.00005 8.49996Z" fill="#FF335A"/></svg></span></button>',
 		// autoplay: true,
 		// autoplaySpeed: 800,
-		responsive: [
-			{
-				breakpoint: 1200,
-				settings: {
-					slidesToShow: 4,
-				},
-			},
-			{
-				breakpoint: 700,
-				settings: {
-					slidesToShow: 3,
-				},
-			},
-			{
-				breakpoint: 500,
-				settings: {
-					slidesToShow: 2,
-				},
-			},
-		],
 	});
 });
 
@@ -308,38 +262,8 @@ $(document).ready(function () {
 		speed: 800,
 		prevArrow: '<button type="button" class="slick_arrow slick_prev"><span><svg width="9" height="17" viewBox="0 0 9 17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M-4.673e-05 8.49996C-4.673e-05 8.69759 0.0732651 8.89541 0.219703 9.04628L7.7197 16.7735C8.01277 17.0755 8.48733 17.0755 8.7802 16.7735C9.07308 16.4716 9.07327 15.9827 8.7802 15.6809L1.81045 8.49996L8.7802 1.31902C9.07327 1.01708 9.07327 0.528135 8.7802 0.226385C8.48714 -0.0753651 8.01258 -0.0755577 7.7197 0.226385L0.219703 7.95365C0.0732651 8.10452 -4.673e-05 8.30234 -4.673e-05 8.49996Z" fill="#FF335A"/></svg></span></button>',
 		nextArrow: '<button type="button" class="slick_arrow slick_next"><span><svg width="9" height="17" viewBox="0 0 9 17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.00005 8.49996C9.00005 8.69759 8.92673 8.89541 8.7803 9.04628L1.2803 16.7735C0.987234 17.0755 0.512672 17.0755 0.219797 16.7735C-0.0730781 16.4716 -0.0732656 15.9827 0.219797 15.6809L7.18955 8.49996L0.219797 1.31902C-0.0732656 1.01708 -0.0732656 0.528135 0.219797 0.226385C0.512859 -0.0753644 0.987421 -0.0755576 1.2803 0.226385L8.7803 7.95365C8.92673 8.10452 9.00005 8.30234 9.00005 8.49996Z" fill="#FF335A"/></svg></span></button>',
-		responsive: [
-			{
-				breakpoint: 1200,
-				settings: {
-					slidesToShow: 4,
-				},
-			},
-			{
-				breakpoint: 991,
-				settings: {
-					slidesToShow: 3,
-				},
-			},
-			{
-				breakpoint: 700,
-				settings: {
-					slidesToShow: 2,
-				},
-			},
-			{
-				breakpoint: 470,
-				settings: {
-					slidesToShow: 1,
-				},
-			},
-			// {
-			// 	breakpoint: 500,
-			// 	settings: {
-			// 		slidesToShow: 2,
-			// 	},
-			// },
-		],
+		// autoplay: true,
+		// autoplaySpeed: 800,
 	});
 });
 
@@ -359,13 +283,14 @@ let sliderTwo = document.querySelector('.swiper-container2');
 let sliderThree = document.querySelector('.swiper-container3');
 let sliderFour = document.querySelector('.swiper-container4');
 
+console.log(sliderOne);
+console.log(sliderTwo);
 
 let swiperOne = new Swiper(sliderOne, {
+	slidesPerView: 2,
 	effect: 'coverflow',
 	speed: 800,
 	grabCursor: true, 
-	slidesPerView: 2.24,
-	spaceBetween: -150,
 	centeredSlides: true,
 	loop: true,
 	coverflowEffect: {
@@ -373,12 +298,12 @@ let swiperOne = new Swiper(sliderOne, {
 		slideShadows: false,
 		stretch: 0,
 		depth: 200,
-		modifier: 2.5,
+		modifier: 3,
 		// slideShadows: true,
 	},
 	navigation: {
-		nextEl: '.swiper-button-next1',
-		prevEl: '.swiper-button-prev1',
+		nextEl: '.swiper-button-next',
+		prevEl: '.swiper-button-prev',
 	},
 	pagination: {
 		el: '.swiper-pagination',
@@ -387,48 +312,6 @@ let swiperOne = new Swiper(sliderOne, {
 	autoplay: {
 		delay: 1000,
 		disableOnInteraction: false,
-	},
-	breakpoints: {
-		1590: {
-			slidesPerView: 2.24,
-			spaceBetween: -150,
-			coverflowEffect: {
-				depth: 200,
-				modifier: 2.5,
-			},
-		},
-		1440: {
-			slidesPerView: 2,
-			spaceBetween: -100,
-			coverflowEffect: {
-				modifier: 2.3,
-				depth: 300,
-			},
-		},
-		1199: {
-			slidesPerView: 2.21,
-			spaceBetween: -100,
-			coverflowEffect: {
-				modifier: 2,
-				depth: 250,
-			},
-		},
-		500: {
-			slidesPerView: 2.2,
-			spaceBetween: -100,
-			coverflowEffect: {
-				modifier: 2,
-				depth: 250,
-			},
-		},
-		300: {
-			slidesPerView: 3,
-			spaceBetween: -100,
-			coverflowEffect: {
-				modifier: 3,
-				depth: 300,
-			},
-		},
 	},
 });
 
@@ -444,18 +327,6 @@ let swiperTwo = new Swiper(sliderTwo, {
 	breakpoints: {
 		992: {
 			spaceBetween: 20,
-		},
-		720: {
-			spaceBetween: 15,
-			slidesPerView: 3,
-		},
-		400: {
-			spaceBetween: 15,
-			slidesPerView: 2,
-		},
-		100: {
-			spaceBetween: 15,
-			slidesPerView: 1,
 		},
 	},
 });	
@@ -475,24 +346,6 @@ let swiperThree = new Swiper(sliderThree, {
 		el: '.swiper-scrollbar',
 		draggable: true,
 	},
-	breakpoints: {
-		1000: {
-			slidesPerView: 1.8,
-			spaceBetween: 200,
-		},
-		768: {
-			slidesPerView: 2,
-			spaceBetween: 150,
-		},
-		575: {
-			slidesPerView: 1.6,
-			spaceBetween: 100,
-		}, 
-		300: {
-			slidesPerView: 1,
-			spaceBetween: 100,
-		}, 
-	},
 });	
 var swiper = new Swiper(sliderFour, {
 	loop: true,
@@ -503,23 +356,6 @@ var swiper = new Swiper(sliderFour, {
 	scrollbar: {
 		el: '.swiper-scrollbar',
 		draggable: true,
-	},
-	breakpoints: {
-		1200: {
-			slidesPerView: 5,
-		},
-		768.98: {
-			slidesPerView: 4,
-		},
-		570: {
-			slidesPerView: 5,
-		},
-		450: {
-			slidesPerView: 4,
-		},
-		300: {
-			slidesPerView: 3,
-		}
 	},
 });
 var swiper2 = new Swiper(".swiper-container5", {
@@ -699,46 +535,43 @@ const uploadBtn = document.querySelector('#uploadBtn');
 // imgDiv.addEventListener('mouseleave', function(){
 //    uploadBtn.style.display = "none";
 // });
-if(imgDiv) {
-	file.addEventListener('change', function(){
-		const choosedFile = this.files[0];
-		if (choosedFile) {
-			const reader = new FileReader();
-			reader.addEventListener('load', function(){
-				if(!img.classList.contains('active')) {
-					img.classList.add('active');
-				}
-				img.setAttribute('src', reader.result);
-			});
-			reader.readAsDataURL(choosedFile);
-		}
-	});
-}
+
+file.addEventListener('change', function(){
+   const choosedFile = this.files[0];
+   if (choosedFile) {
+      const reader = new FileReader();
+      reader.addEventListener('load', function(){
+			if(!img.classList.contains('active')) {
+				img.classList.add('active');
+			}
+         img.setAttribute('src', reader.result);
+      });
+      reader.readAsDataURL(choosedFile);
+   }
+});
 
 
 let editBlock = document.querySelectorAll('.profile-bottom__item')
-if (editBlock) {
-	editBlock.forEach((elem) => {
-		let editBtn = elem.querySelector('.profile-bottom__edit');
-			editBtn.addEventListener('click', function () {
-				let editInput = elem.querySelectorAll('.input');
-				if (!editBtn.classList.contains('active')) {
-					editBtn.classList.add('active');
-					console.log(editInput)
-					editInput.forEach((el) => {
-						el.classList.add('active');
-						el.removeAttribute('readonly')
-					});
-				} else {
-					editBtn.classList.remove('active')
-					editInput.forEach((el) => {
-						el.classList.remove('active');
-						el.setAttribute('readonly', 'true')
-					});
-				}
-			});
-	})
-}
+editBlock.forEach((elem) => {
+	let editBtn = elem.querySelector('.profile-bottom__edit');
+		editBtn.addEventListener('click', function () {
+			let editInput = elem.querySelectorAll('.input');
+			if (!editBtn.classList.contains('active')) {
+				editBtn.classList.add('active');
+				console.log(editInput)
+				editInput.forEach((el) => {
+					el.classList.add('active');
+					el.removeAttribute('readonly')
+				});
+			} else {
+				editBtn.classList.remove('active')
+				editInput.forEach((el) => {
+					el.classList.remove('active');
+					el.setAttribute('readonly', 'true')
+				});
+			}
+		});
+})
 
 const profileTabsBtn = document.querySelectorAll('.profile-right__tab');
 const profileTabItems = document.querySelectorAll('.profile-right__item');
@@ -770,337 +603,197 @@ profileTabsBtn.forEach(function (item) {
 	});
 });
 
+// let swiperOne = document.querySelector('.swiperTwo');
 
-let audioBlock = document.querySelectorAll('.meditation-audio__item');
-audioBlock.forEach((elem) => {
-	let audioBtn = elem.querySelector('.meditation-audio__link');
-	let audio = elem.querySelector('.audio');
-	let audioTime = elem.querySelector('.audio-time');
-	audioTime.innerHTML = `${Math.floor((audio.duration)/60)}:${Math.floor((audio.duration)%60)}`;
-	audioBtn.addEventListener('click', function () {
-		if (!audioBtn.classList.contains('active')) {
-			audioBtn.classList.add('active');
-			audio.play()
-		} else {
-			audioBtn.classList.remove('active');
-			audio.pause()
-		}
-	});
-});
-
-
-// const selectGorod = document.querySelector('.select-gorod');
-// selectGorod.addEventListener('change', function () {
-// 	tabs.querySelector('.active').classList.remove('active');
-// 	tabs.querySelectorAll('.tab')[select.options.selectedIndex].classList.add('active');
-// });
-
-const formatNumber = (x) => x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
-const totalPriceWrapper = document.getElementById('total-price');
-const subScale = document.getElementById('sub-price');
-const getSubTotalPrice = (input) => Number(input.value) * (Number(input.dataset.price));
-const totalPriceOrders = document.getElementById('total-price-orders');
-const blockDelivery = document.getElementById('delivery');
-const methodDelivery = document.querySelectorAll('#delivery option');
-const priceDelivery = document.getElementById('delivery-price')
-const totalSummaWrapper = document.getElementById('total-summa');
-// const ACTION = {
-// 	MINUS: 'minus',
-// 	PLUS: 'plus',
+// if (swiperOne) {
+// 	new Swiper('.swiper-container', {
+// 		slidesPerView: 'auto',
+// 		spaceBetween: 30,
+// 		loop: false,
+// 		freeMode: true,
+// 		scrollbar: {
+// 		el: '.swiper-scrollbar',
+// 			draggable: true,
+// 		},
+// 		breakpoints: {
+// 			992: {
+// 				spaceBetween: 20,
+// 			},
+// 			// 500: {
+// 			// 	slidesPerView: 1,
+// 			// 	loop: false,
+// 			// 	// loopedSlides: 0,
+// 			// 	freeMode: true,
+// 			// },
+// 		},
+// 		// touchratio: 1,
+// 	});	
 // }
 
-if (blockDelivery) {
-	blockDelivery.addEventListener('change', function () {
-		if(blockDelivery.value == 'methodDelivery2') {
-			priceDelivery.dataset.dev = 3600;
-			priceDelivery.textContent = `${priceDelivery.dataset.dev} ₸`;
-			priceDelivery.nextElementSibling.textContent = ' (доставка курьером)';
-			totalSummaWrapper.textContent = formatNumber(Number(totalSummaWrapper.dataset.summa) + Number(priceDelivery.dataset.dev)) + ' ₸';
-		} else {
-			priceDelivery.dataset.dev = 0;
-			priceDelivery.textContent = `${priceDelivery.dataset.dev} ₸`;
-			priceDelivery.nextElementSibling.textContent = '';
-			totalSummaWrapper.textContent = formatNumber(Number(totalSummaWrapper.dataset.summa) + Number(priceDelivery.dataset.dev)) + ' ₸';
-		}
-	});
-}
+// let swiperTwo = document.querySelector('.swiper-container');
 
-const allprice = () => {
-	// const discountProduct = document.querySelector('.discount');
-	let totalCost = 0;
-	[...document.querySelectorAll('.item-price')].forEach((basketItem) => {
-		totalCost += getSubTotalPrice(basketItem.querySelector('.counter__value'));
-	});
-	if (totalPriceWrapper) {
-		totalPriceWrapper.textContent = formatNumber(totalCost) + ' ₸';
-		totalPriceWrapper.dataset.value = totalCost;
-	}
-	if (totalPriceOrders) {
-		totalPriceOrders.textContent = formatNumber(totalCost) + ' ₸'
-	}
-	if (priceDelivery) {
-		let priceDostavka = priceDelivery.dataset.dev;
-		// subPriceWrapper.textContent = formatNumber(totalCost);
-		// subPriceWrapper.dataset.value = totalCost;
-		totalSummaWrapper.textContent = formatNumber(totalCost + Number(priceDostavka)) + ' ₸';
-		totalSummaWrapper.dataset.summa = totalCost + Number(priceDostavka);
-	}
-}
-
-const counter = function () {
-	const btns = document.querySelectorAll('.counter__btn');
-	btns.forEach((btn) => {
-		btn.addEventListener('click', function () {
-			const direction = this.dataset.direction;
-			const input = this.parentElement.querySelector('.counter__value');
-			const currentValue = +input.value;
-			let newValue;
-			if (direction === 'plus') {
-				newValue = currentValue + 1;
-				totalPriceWrapper.textContent = `${formatNumber(Number(totalPriceWrapper.dataset.value) + Number(input.dataset.price))} ₸`;
-				totalPriceWrapper.dataset.value = Number(totalPriceWrapper.dataset.value) + Number(input.dataset.price);
-				totalSummaWrapper.textContent = totalPriceWrapper.textContent;
-				totalSummaWrapper.dataset.summa = totalPriceWrapper.dataset.value;
-			} else {
-				if (currentValue - 1 > 0) {
-					newValue = currentValue - 1;
-					totalPriceWrapper.textContent = `${formatNumber(Number(totalPriceWrapper.dataset.value) - Number(input.dataset.price))} ₸`;
-					totalPriceWrapper.dataset.value = Number(totalPriceWrapper.dataset.value) - Number(input.dataset.price);
-					totalSummaWrapper.textContent = totalPriceWrapper.textContent;
-					totalSummaWrapper.dataset.summa = totalPriceWrapper.dataset.value;
-					// totalSummaWrapper.textContent =`${formatNumber(Number(totalPriceWrapper.dataset.value) - Number(input.dataset.price))} ₸`;
-					// totalSummaWrapper.dataset.summa = Number(totalPriceWrapper.dataset.value) + Number(input.dataset.price);
-				} else {
-					newValue = 1;
-				}
-				// newValue = currentValue - 1 > 0 ? currentValue - 1 : 1;
-			}
-			input.value = newValue;
-			const itemMain = btn.closest('.item-price');
-			itemMain.querySelector('.all-price').textContent = `${formatNumber(getSubTotalPrice(input))} ₸`;
-		})
-	});
-}
-
-const cardCatalog = document.querySelectorAll('.js-product');
-const button = document.querySelector('.js-buy');
-const sectionButtonCount = document.querySelector('.section__button__count') 
-
-cardCatalog.forEach((elem) => {
-	elem.addEventListener('click', function (event) {
-		// let itemHref = elem.querySelector('.card__link').href
-		// console.log(elem.querySelector('.card__link').href)
-		if (event.target.classList.contains('js-buy')) {
-				addToCart(elem);
-			// console.log(elem.querySelector('.card__link').href)
-		}
-		return false;
-	});
-});
-
-function getCartData() {
-	return JSON.parse(localStorage.getItem('cart'));
-}
-// Записываем данные в LocalStorage
-function setCartData(o) {
-	localStorage.setItem('cart', JSON.stringify(o));
-	return false;
-}
-
-// const sectionSumma = document.querySelector('.section-summa');
-// const sectionButtons = document.querySelector('.section-bottom__buttons');
-// const sectionBodyRow = document.querySelector('.section-body__row');
-// const basketBlockTop = document.querySelector('.basket-block__top');
-// const basketBlockButtons = document.querySelector('.basket-block__buttons');
-// const basketBlockPrice = document.querySelector('.basket-block__price');
-// const textareaId = document.getElementById('textarea_id');
-
-const cardBasket = document.getElementById('cart-content');
-
-function addToCart(e) {
-	let cartData = JSON.parse(localStorage.getItem('cart')) || {};
-	e.querySelector('.js-buy').disabled = true;
-	e.querySelector('.js-buy').classList.add('active');
-	e.querySelector('.js-buy').innerHTML = 'В корзине';
-	// получаем данные корзины или создаём новый объект, если данных еще нет
-	let parentBox = e.closest('.js-product');
-		itemDataId = parentBox.getAttribute('data-id'), // родительский элемент кнопки "Добавить в корзину"
-		itemId = e.closest('.js-product').getAttribute('data-id'),
-		itemSrc = e.closest('.js-product').getAttribute('data-product-img'),
-		itemTitle = e.closest('.js-product').getAttribute('data-product-title'), // название товара
-		itemPrice = Number(e.closest('.js-product').getAttribute('data-product-price')), // стоимость товара
-		// itemOne = Number(e.closest('.js-product').querySelector('.counter__value').value);
-		itemCount = Number(e.closest('.js-product').getAttribute('data-product-count')),
-		itemSumma = itemPrice * itemCount,
-		itemTotalSumma = itemSumma;
-		// itemTotal = totalPriceWrapper.dataset.value;
-		// itemTitle = parentBox.getAttribute('card__link'), // название товара
-		// itemPrice = parentBox.getAttribute('.card__price'); // стоимость товара
-		cartData[itemDataId];
-	if (cartData.hasOwnProperty(itemDataId)) { // если такой товар уже в корзине, то добавляем +1 к его количеству
-		e.querySelector('.js-buy').disabled = true;
-		e.querySelector('.js-buy').classList.add('active');
-		e.querySelector('.js-buy').innerHTML = 'В корзине';
-	} else { // если товара в корзине еще нет, то добавляем в объект
-		cartData[itemDataId] = {itemId, itemSrc, itemTitle, itemPrice, itemCount, itemSumma, itemTotalSumma};
-	}
-	setCartData(cartData);
-	return false;
-}
-
-function openCart(){
-	var cartData = getCartData(), // вытаскиваем все данные корзины
-		totalItems = '';
-	// если что-то в корзине уже есть, начинаем формировать данные для вывода
-	if(cartData !== null){
-		for(var items in cartData){
-			totalItems += '<div class="basket-product item-price" data-id="' + cartData[items].itemId + '">';
-			for(var i = 0; i < 1; i++){
-				totalItems += '<div class="basket-product__image"><img src="' + cartData[items].itemSrc +'" alt=""></div>';
-				totalItems += '<div class="basket-product__block"><div class="basket-product__top"><div class="basket-product__title">' + cartData[items].itemTitle +'</div></div>';
-				totalItems += '<div class="basket-product__bottom"><div class="basket-product__count"><div class="basket-product__subtitle">Количество</div><div class="counter_block big_basket"><button type="button" data-direction="minus" class="counter__btn counter__minus">-</button><input value="' + cartData[items].itemCount + '" type="text" data-price="' + cartData[items].itemPrice + '" class="counter__value" readonly="true"><button type="button" data-direction="plus" class="counter__btn counter__plus">+</button></div></div>';
-				// totalItems += '<div class="product-bottom__four"><div class="section-bottom__range"><form action=""><div class="counter_block big_basket" ><input type="button"  value="-" class="counter__btn btn-minus"><input value="' + cartData[items].itemCount +'" type="text" data-price="' + cartData[items][3] + '" class="input"><input type="button" value="+" class="counter__btn btn-plus"></div></form></div></div>';
-				totalItems += '<div class="basket-product__price"><div class="basket-product__subtitle">Цена за единицу:</div><div class="basket-product__price price">'+ formatNumber(cartData[items].itemPrice) +'₸</div></div>';
-				totalItems += '<div class="basket-product__allprice"><div class="basket-product__subtitle">Итоговая стоимоть</div><div class="basket-product__price all-price">' + formatNumber(cartData[items].itemSumma) + ' ₸</div></div></div>';
-			}
-			totalItems += '</div></div>'
-		}
-		if(cardBasket) {
-			cardBasket.innerHTML = totalItems;
-		}
-	}
-		const updateQuantityTotalPrice = (id, quantity) => {
-			cartData[id].itemCount = quantity;
-			cartData[id].itemSumma = cartData[id].itemPrice * cartData[id].itemCount; 
-			setCartData(cartData);
-		}
-		const increaseQuantity = (id) => {
-			const newQuantity = cartData[id].itemCount + 1;
-			updateQuantityTotalPrice(id, newQuantity);
-		}
-		const decreaseQuantity = (id, cartDOM) => {
-			const newQuantity = cartData[id].itemCount - 1;
-			if (newQuantity >= 1) {
-				updateQuantityTotalPrice(id, newQuantity);
-			}
-			if (newQuantity === 0) {
-				cartDOM.style.display = 'none';
-				deleteCartItem(id);
-			}
-		}
+// if (swiperTwo) {
+// 	new Swiper('.swiper-container', {
+// 		// slidesPerView: 1,
+// 		slidesPerView: 4,
+// 		// slidesPerView: 3,
+// 		spaceBetween: 30,
+// 		// slidesPerGroup: 5,
+// 		loop: false,
+// 		// loopedSlides: 0,
+// 		freeMode: true,
+// 		// longSwipes: false,
+// 		// loopedSlides: 3,
+// 		// longSwipesMs: 300,
+// 		scrollbar: {
+// 		el: '.swiper-scrollbar',
+// 			draggable: true,
+// 		// dragSize: 100,
+// 	// 		spaceBetween: 10,
+// 	//   centeredSlides: true,
+// 	//   slidesPerView: "auto",
+// 	//   touchRatio: 0.2,
+// 	//   slideToClickedSlide: true
+// 	// 	//   snapOnRelease: true,
+// 		//   dragSize: 4,
+// 		//   hide: false,
+// 		},
+// 		breakpoints: {
+// 			992: {
+// 				slidesPerView: 4,
+// 				freeMode: true,
+// 			},
+// 			500: {
+// 				slidesPerView: 3,
+// 				freeMode: true,
+// 			},
+// 			500: {
+// 				slidesPerView: 3,
+// 				freeMode: true,
+// 			},
+// 		},
+// 	// touchratio: 1,
+// });	
+// }
+// const time = 1000;
+// const step = 1;
+// let blockCounter = document.getElementById('counter')
 
 
-		const deleteCartItem = (id) => {	
-			// const cartItemDOMElement = cartDOMElement.querySelector(`[data-id="${id}"]`);
-			// cartDOMElement.removeChild(cartItemDOMElement);
-			delete cartData[id];
-			setCartData(cartData);
-			disabledButton();
-			allprice();
-			openCart();
-			if (Object.keys(cartData).length == 0) {
-				localStorage.removeItem('cart');
-			}
-			// if(cartData[id] == undefined) {
-			// 	localStorage.clear();
-				// openCart();
-			// }
-		}
 
-		const btns = document.querySelectorAll('.counter__btn');
-		btns.forEach(btn => {
-			btn.addEventListener('click', function () {
-				const direction = this.dataset.direction;
-				const cartDOMElement = btn.closest('.item-price')
-				const productID = cartDOMElement.getAttribute('data-id');
-				if (direction === 'plus') {
-					increaseQuantity(productID);
-				} else {
-					decreaseQuantity(productID, cartDOMElement);
-				}
-			});
-		});
+// const rangeSliderTwo = document.getElementById('range-slider_two');
+// const leftButtonSlider = document.querySelector('.noUi-handle-lower');
+// const rightButtonSlider = document.querySelector('.noUi-handle-upper');
+// const dataMinValue = document.getElementById('catalog-input');
+// const dataMaxValue = document.getElementById('catalog-input');
+// // const rangeSliderButton = document.querySelectorAll('.noUi-handle');
 
-		const disabledButton = () => {
-			// console.log(cart)
-			const test = document.querySelectorAll('.js-product');
-			const button = document.querySelector('.js-buy');;
-			if(cartData) {
-				for (let i = 0; i < test.length; i++) {
-					const attr = test[i].getAttribute('data-id');
-					const parent = test[i].querySelector('.js-buy')
-						// console.log(parent)
-						// console.log(cart.hasOwnProperty(attr))
-					if (cartData.hasOwnProperty(attr)) {
-						parent.disabled = true;
-						parent.classList.add('active');
-						if(button) {
-							button.innerHTML = 'В корзине';
-						}
-					} else {
-						parent.disabled = false;
-						parent.classList.remove('active');
-						if(button) {
-							button.innerHTML = 'В корзину';
-						}
-					}
-				}
-			}
-		}
-	// if(textareaId) {
-	// 	textareaId.innerHTML = localStorage.getItem('cart');
-	// }
-	allprice();
-	disabledButton();
-	counter();
-	return false;
-}
-
-openCart();
-
-
-const orderBtn = document.querySelectorAll('.basket-tab__btn');
-const basketRow = document.querySelectorAll('.basket-left__row');
-orderBtn.forEach(function (item) {
-	item.addEventListener('click', function () {
-		let currentBtn = item;
-		let tabId = currentBtn.getAttribute('data-regis');
-		let currentTab = document.querySelector(tabId);
-
-		if (!currentBtn.classList.contains('active')) {
-
-			orderBtn.forEach(function (item) {
-				item.classList.remove('active');
-			});
-			basketRow.forEach(function (item) {
-				item.classList.remove('active');
-			});
-			currentBtn.classList.add('active');
-			currentTab.classList.add('active');
-		}
-	});
-});
-
-
-let videoLink = document.querySelectorAll('.meditation__column');
-let itsVideo = document.querySelector('.meditation__video');
-videoLink.forEach((elem) => {
-	elem.addEventListener('click', function () {
-		itsVideo.href = elem.dataset.href;
-		let videoLinkImage = elem.querySelector('img');
-		let videoImage = itsVideo.querySelector('img');
-		videoImage.src = videoLinkImage.src;
-	})
-})
-
-// methodDelivery.	
-
-// $('#delivery option').each(function(elem) {
-// 	console.log(elem.value('methodDelivery2'))
-// 	// $(this).attr('selected', false);
-// 	// $('#rate').val(val).trigger('change');
-// 	if (val == $(this).attr('value')) {
-// 	$(this).attr('selected', true);
+// const input0 = document.getElementById('rangetwo_1');
+// const input1 = document.getElementById('rangetwo_2');
+// const inputs = [input0, input1];
+// var input0Value;
+// var input1Value;
+// if(rangeSliderTwo) {
+// 	if (!input0.value == '') {
+// 		input0Value = input0.value;
+// 	} else {
+// 		input0Value = 0;
 // 	}
-// // });
+// 	if (!input1.value == '') {
+// 		input1Value = input1.value;
+// 	} else {
+// 		input1Value = dataMaxValue.dataset.max;
+// 	}
+// }
+// if (rangeSliderTwo) {
+// 	noUiSlider.create(rangeSliderTwo, {
+// 		// start: [0, Number(dataMaxValue.dataset.max)],
+// 		start: [Number(input0Value), Number(input1Value)],
+// 		connect: true,
+// 		step: 1,
+// 		limit: Number(dataMaxValue.dataset.max),
+// 		pips: {
+// 			mode: 'values',
+// 			values: [Number(dataMinValue.dataset.min), Number(dataMaxValue.dataset.max)],
+// 			density: 0,
+// 			stepped: false
+// 		},
+// 		range: {
+// 			'min': Number(dataMinValue.dataset.min),
+// 			'max': Number(dataMaxValue.dataset.max)
+// 			// 'min': 1200,
+// 			// 'max': 1300
+// 		},
+// 	});
 
+// 	// console.log(leftButtonSlider.getAttribute("aria-valuenow").textContent);
+
+// 	rangeSliderTwo.noUiSlider.on('slide', function (values, handle) {
+// 		inputs[handle].value = Math.round(values[handle]);
+// 	});
+
+	
+	
+// 	const setRangeSliderTwo = (i, value) => {
+// 		let arr = [null, null];
+// 		arr[i] = value;
+
+// 		console.log(arr);
+
+// 		rangeSliderTwo.noUiSlider.set(arr);
+// 	};
+
+// 	inputs.forEach((el, index) => {
+// 		el.addEventListener('change', (e) => {
+// 			console.log(index);
+// 			setRangeSliderTwo(index, e.currentTarget.value);
+// 		});
+// 	});
+// };
+
+
+
+
+// const rangeSlider = document.getElementById('range-slider');
+// if (rangeSlider) {
+// 	noUiSlider.create(rangeSlider, {
+// 		start: [0, 94700],
+// 		connect: true,
+// 		step: 1,
+// 		limit: 94700,
+// 		pips: {
+// 			mode: 'values',
+// 			values: [30000, 95000],
+// 			density: 0,
+// 			stepped: false
+// 		},
+// 		range: {
+// 			'min': 30000,
+// 			'max': 95000
+// 		},
+// 	});
+// 	const input0 = document.getElementById('range_1');
+// 	const input1 = document.getElementById('range_2');
+// 	const inputs = [input0, input1];
+
+// 	rangeSlider.noUiSlider.on('update', function (values, handle) {
+// 		inputs[handle].value = Math.round(values[handle]);
+// 		console.log(Math.round(values[handle]));
+// 	});
+
+// 	const setRangeSlider = (i, value) => {
+// 		let arr = [null, null];
+// 		arr[i] = value;
+
+// 		console.log(arr);
+
+// 		rangeSlider.noUiSlider.set(arr);
+// 	};
+
+// 	inputs.forEach((el, index) => {
+// 		el.addEventListener('change', (e) => {
+// 			console.log(index);
+// 			setRangeSlider(index, e.currentTarget.value);
+// 		});
+// 	});
+// };

@@ -2546,7 +2546,30 @@ ul, p {
     color: #3E1A79;
     padding: 48px 48px 48px 0;
 }
-
+.gamepractice-image__link {
+    position: absolute;
+    z-index: 3;
+}
+.gamepractice-image__two .gamepractice-image__link img {
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+    position: static;
+    bottom: 0;
+    border-radius: 0;
+}
+.link-top {
+    bottom: 55px;
+    right: 14px;
+}
+.link-center {
+    bottom: 24px;
+    right: 36px;
+}
+.link-bottom {
+    bottom: -2px;
+    right: 66px;
+}
 /*----------------------------mentors---------------------------------------*/
 
 .advantage {
@@ -3284,6 +3307,7 @@ ul, p {
     display: flex;
     flex-direction: column;
     border-radius: 20px 20px 0 0;
+    height: 100%;
 }
 .courses-right__image {
     height: 220px;
@@ -3299,6 +3323,9 @@ ul, p {
     border: 1px solid rgba(62, 26, 121, 0.3);
     border-radius: 0px 0px 20px 20px;
     padding: 30px 20px;
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
 }
 .courses-right__title {
     font-weight: 600;
@@ -3313,6 +3340,7 @@ ul, p {
     line-height: 130%;
     color: #3E1A79;
     margin-bottom: 20px;
+    flex: 1 1 auto;
 }
 .courses-right__menu {
     margin: 0 20px;
@@ -3343,6 +3371,7 @@ ul, p {
 .books-right__item {
     display: flex;
     flex-direction: column;
+    height: 100%;
 }
 .books-right__image {
     display: flex;
@@ -3385,6 +3414,7 @@ ul, p {
     border-radius: 0px 0px 20px 20px;
     display: flex;
     flex-direction: column;
+    flex: 1 1 auto;
 }
 .books-right__text {
     font-weight: 400;
@@ -3796,11 +3826,11 @@ ul, p {
 .registration-right__btn span {
     margin-right: 10px;
 }
-.registration-right__btn:hover svg path {
-    fill: #FF335A;
+.registration-right__btn svg path {
     transition: all 0.5s;
 }
 .registration-right__btn:hover svg path {
+    stroke: #FF335A;
     transition: all 0.5s;
 }
 .page-icon-white .page__link span {
@@ -4672,6 +4702,7 @@ ul, p {
 .product__item {
     display: flex;
     flex-direction: column;
+    height: 100%;
 }
 .product__image {
     height: 296px;
@@ -4688,6 +4719,9 @@ ul, p {
     border: 1px solid rgba(62, 26, 121, 0.3);
     border-radius: 0px 0px 20px 20px;
     border-top: 0;
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
 }
 .product__subtitle {
     font-weight: 600;
@@ -4831,10 +4865,14 @@ ul, p {
 .select__two::-ms-expand {
 	display: none;
 }
-.select__two:focus {
+/* .select__two:focus {
 	outline: none;
 	box-shadow: 0px 0px 0px 1px #3E1A79, 0px 0px 10px #3E1A79;
+} */
+.select__two .placeholder-select {
+    color: rgba(62, 26, 121, 0.5);
 }
+
 .select-two__wrapper {
 	position: relative;
 }
@@ -5036,6 +5074,9 @@ ul, p {
     line-height: 150%;
     color: #3E1A79;
     padding: 13px 30px;
+}
+.basket-product__textarea::-webkit-input-placeholder {
+    color: #3E1A79;
 }
 .basket-right__price {
     margin-bottom: 30px;
@@ -5604,6 +5645,22 @@ ul, p {
     }
     .pupils-mentor__image img {
         bottom: 26px;
+    }
+    .link-top {
+        bottom: 70px;
+        right: -1px;
+    }
+    .link-center {
+        bottom: 35px;
+        right: 19px;
+    }
+    .link-bottom {
+        bottom: 7px;
+        right: 50px;
+    }
+    .gamepractice-image__link {
+        width: 22px;
+        height: 22px;
     }
 }
 @media (max-width: 1440.98px) {
@@ -6818,6 +6875,22 @@ ul, p {
         border-radius: 0 0 0 133px;
         background-size: 90% 100%;
     }
+    .link-top {
+        bottom: 70px;
+        right: -1px;
+    }
+    .link-center {
+        bottom: 35px;
+        right: 19px;
+    }
+    .link-bottom {
+        bottom: 13px;
+        right: 50px;
+    }
+    .gamepractice-image__link {
+        width: 20px;
+        height: 20px;
+    }
 }
 @media (max-width: 1199.98px) {
     .container {
@@ -7709,6 +7782,22 @@ ul, p {
     .pupils-mentor__image img {
         bottom: 26px;
     }
+    .link-top {
+        bottom: 47px;
+        right: -6px;
+    }
+    .link-center {
+        bottom: 20px;
+        right: 8px;
+    }
+    .link-bottom {
+        bottom: -1px;
+        right: 31px;
+    }
+    .gamepractice-image__link {
+        width: 19px;
+        height: 19px;
+    }
 }
 @media (max-width: 991.98px) {
     .header {
@@ -7717,6 +7806,9 @@ ul, p {
     .header__logo img {
         width: 45px;
         height: 55px;
+    }
+    .header__logo {
+        margin-right: 20px;
     }
     .header-left {
         width: 100%;
@@ -8445,6 +8537,18 @@ ul, p {
     .pupils-mentor__image img {
         bottom: 27px;
     }
+    .link-top {
+        bottom: 47px;
+        right: -3px;
+    }
+    .link-center {
+        bottom: 20px;
+        right: 11px;
+    }
+    .link-bottom {
+        bottom: -1px;
+        right: 34px;
+    } 
 }
 @media (max-width: 800.98px) {
     .search-mentor__block {
@@ -9340,6 +9444,22 @@ ul, p {
     .pupils-mentor__image {
         height: 230px;
     }
+    .gamepractice-image__link {
+        width: 18px;
+        height: 18px;
+    }
+    .link-top {
+        right: -6px;
+        bottom: 49px;
+    }
+    .link-center {
+        bottom: 24px;
+        right: 7px;
+    }
+    .link-bottom {
+        bottom: 5px;
+        right: 30px;
+    }
 }
 @media (max-width: 700.98px) {
     .search-mentor__block {
@@ -9369,6 +9489,22 @@ ul, p {
     }
     .pupils-mentor__image img {
         bottom: 21px;
+    }
+    .link-top {
+        right: 20px;
+        bottom: 49px;
+    }
+    .link-center {
+        bottom: 21px;
+        right: 34px;
+    }
+    .link-bottom {
+        bottom: 0px;
+        right: 57px;
+    }
+    .gamepractice-image__link {
+        width: 17px;
+        height: 17px;
     }
 }
 @media (max-width: 575.98px) {
@@ -10635,6 +10771,22 @@ ul, p {
     .pupils-mentor__image img {
         bottom: 20px;
     }
+    .link-top {
+        right: 4px;
+        bottom: 49px;
+    }
+    .link-center {
+        bottom: 22px;
+        right: 20px;
+    }
+    .link-bottom {
+        bottom: 0px;
+        right: 43px;
+    }
+    .gamepractice-image__link {
+        width: 17px;
+        height: 17px;
+    }
 }
 @media (max-width: 420.98px) {
     .gamepractice__column {
@@ -10645,6 +10797,22 @@ ul, p {
     }
     .advantage-row__column {
         flex: 0 1 100%;
+    }
+    .link-top {
+        right: 33px;
+        bottom: 49px;
+    }
+    .link-center {
+        bottom: 21px;
+        right: 47px;
+    }
+    .link-bottom {
+        bottom: 0px;
+        right: 72px;
+    }
+    .gamepractice-image__link {
+        width: 17px;
+        height: 17px;
     }
 }
 

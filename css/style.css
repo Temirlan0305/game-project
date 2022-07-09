@@ -3283,6 +3283,12 @@ ul, p {
     display: flex;
     align-items: center;
 }
+.courses-left__link.active {
+    color: #FF335A;
+}
+.courses-left__link.active svg path{
+    fill: #FF335A;
+}
 .courses-left__link span {
     margin-left: 15px;
 }

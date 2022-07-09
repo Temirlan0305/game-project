@@ -769,8 +769,6 @@ profileTabsBtn.forEach(function (item) {
 		// }
 	});
 });
-
-
 let audioBlock = document.querySelectorAll('.meditation-audio__item');
 audioBlock.forEach((elem) => {
 	let audioBtn = elem.querySelector('.meditation-audio__link');
@@ -778,17 +776,37 @@ audioBlock.forEach((elem) => {
 	let audioTime = elem.querySelector('.audio-time');
 	audioTime.innerHTML = `${Math.floor((audio.duration)/60)}:${Math.floor((audio.duration)%60)}`;
 	audioBtn.addEventListener('click', function () {
-		if (!audioBtn.classList.contains('active')) {
-			audioBtn.classList.add('active');
-			audio.play()
-		} else {
-			audioBtn.classList.remove('active');
-			audio.pause()
+			if (!audioBtn.classList.contains('active')) {
+				// let audioSearch = confirm("вы точно хотите воспроизвести аудиозапись?");
+				// if (audioSearch) {
+					audioBtn.classList.add('active');
+					audio.play()
+				// }
+			} else {
+				audioBtn.classList.remove('active');
+				audio.pause()
 		}
 	});
 });
 
 
+
+$(document).ready(function() {
+	$('.item').on('click', function(e) {
+	e.preventDefault();
+		var nameLink = e.target;
+		var val = e.target.hash.slice(1);
+		$('#rate option').each(function() {
+			// по умолчанию устанавливаем у всех selected: false
+			$(this).attr('selected', false);
+			// Эта строка позволяет обновлять отображение выбранного элемента select
+			$('#rate').val(val).trigger('change');
+			if (val == $(this).attr('value')) {
+				$(this).attr('selected', true);
+			}
+		});
+	});
+});
 // const selectGorod = document.querySelector('.select-gorod');
 // selectGorod.addEventListener('change', function () {
 // 	tabs.querySelector('.active').classList.remove('active');
@@ -1061,25 +1079,47 @@ openCart();
 
 const orderBtn = document.querySelectorAll('.basket-tab__btn');
 const basketRow = document.querySelectorAll('.basket-left__row');
-orderBtn.forEach(function (item) {
-	item.addEventListener('click', function () {
-		let currentBtn = item;
-		let tabId = currentBtn.getAttribute('data-regis');
-		let currentTab = document.querySelector(tabId);
-
-		if (!currentBtn.classList.contains('active')) {
-
-			orderBtn.forEach(function (item) {
-				item.classList.remove('active');
+let oneInput = document.querySelector('.one-input');
+if (orderBtn) {
+	orderBtn.forEach(function (item) {
+		var form = document.querySelector('#main'),
+		select = form.querySelectorAll('.select__two'),
+		arr;
+		// form.addEventListener('change', function() {
+			item.addEventListener('click', function () {
+				arr = [].map.call( select, function(sel) {
+					return sel.value
 			});
-			basketRow.forEach(function (item) {
-				item.classList.remove('active');
-			});
-			currentBtn.classList.add('active');
-			currentTab.classList.add('active');
-		}
-	});
+			let currentBtn = item;
+			let tabId = currentBtn.getAttribute('data-regis');
+			let currentTab = document.querySelector(tabId);
+			for (let i = 0; i <= arr.length; i++) {
+				if (arr[0] !== 'не выбрано' && arr[1] !== 'не выбрано' && arr[2] !== 'не выбрано' && oneInput.value !== '') {
+					if (!currentBtn.classList.contains('active')) {
+						orderBtn.forEach(function (item) {
+							item.classList.remove('active');
+						});
+						basketRow.forEach(function (item) {
+							item.classList.remove('active');
+						});
+						currentBtn.classList.add('active');
+						currentTab.classList.add('active');
+					}
+					oneInput.style.borderColor = '#3E1A79';
+					select.forEach((elem) => {
+						elem.style.borderColor = '#3E1A79';
+					})
+				} else {
+					oneInput.style.borderColor = 'red';
+					select.forEach((elem) => {
+						elem.style.borderColor = 'red';
+					})
+				}
+			}
+		});
+	// });
 });
+}
 
 
 let videoLink = document.querySelectorAll('.meditation__column');
@@ -1104,3 +1144,27 @@ videoLink.forEach((elem) => {
 // 	}
 // // });
 
+
+// const orderBtn = document.querySelectorAll('.basket-tab__btn');
+// const basketRow = document.querySelectorAll('.basket-left__row');
+// const orderBtn = document.querySelectorAll('.basket-tab__btn');
+// const basketRow = document.querySelectorAll('.basket-left__row');
+// 			orderBtn.forEach(function (item) {
+// 				item.addEventListener('click', function () {
+// 					let currentBtn = item;
+// 					let tabId = currentBtn.getAttribute('data-regis');
+// 					let currentTab = document.querySelector(tabId);
+
+// 					if (!currentBtn.classList.contains('active')) {
+
+// 						orderBtn.forEach(function (item) {
+// 							item.classList.remove('active');
+// 						});
+// 						basketRow.forEach(function (item) {
+// 							item.classList.remove('active');
+// 						});
+// 						currentBtn.classList.add('active');
+// 						currentTab.classList.add('active');
+// 					}
+// 				});
+// 			});

@@ -5251,7 +5251,12 @@ ul, p {
     right: 60px;
     bottom: 12px;
 }
-
+.registration__tabs.active {
+    display: block;
+}
+.registration__tabs {
+    display: none;
+}
 
 
 @media (max-width: 1590px) {

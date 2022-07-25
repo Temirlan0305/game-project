@@ -1131,7 +1131,39 @@ videoLink.forEach((elem) => {
 		let videoImage = itsVideo.querySelector('img');
 		videoImage.src = videoLinkImage.src;
 	})
-})
+});
+
+
+
+let registrationBlock = document.querySelectorAll('.registration__tabs');
+let registrationLeftBtn = document.querySelectorAll('.registration-left__btn');
+let registrationRightBtn = document.querySelectorAll('.registration-right__btn.regist_btn');
+let registrationInput = document.querySelectorAll('.registration__input');
+registrationRightBtn.forEach((elem) => {
+	elem.addEventListener('click', function () {
+		let parentRegist = elem.closest('.registration__tabs');
+		let registrationInput = parentRegist.querySelectorAll('.registration__input');
+		parentRegist.classList.remove('active');
+		parentRegist.nextElementSibling.classList.add('active');
+		// registrationInput.forEach((el) => {
+		// 	if(el !== '') {
+		// 		console.log('q,wp,doq,wo,o')
+		// 	} else {
+		// 		el.classList.add('error')
+		// 	}
+		// })
+	});
+});
+
+registrationLeftBtn.forEach((elem) => {
+	elem.addEventListener('click', function () {
+		if(!elem.closest('.registration-one')) {
+			let parentRegist = elem.closest('.registration__tabs');
+			parentRegist.classList.remove('active');
+			parentRegist.previousElementSibling.classList.add('active');
+		}
+	});
+});
 
 // methodDelivery.	
 

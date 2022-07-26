@@ -566,112 +566,112 @@ select();
 
 let formBlock = document.getElementById('form');
 let formTwo = document.getElementById('form__two');
-if (formBlock) {
-	$('#form').validate({
-		rules: {
-			email: {
-				required: true,
-				email: true,
-			},
-			name: {
-				required: true,
-				minlength: 3,
-			},
-			// checked: {
-			// 	required: true,
-			// }
-			password: {
-				required: true,
-				minlength: 5,
-			},
-			password_again: {
-				required: true,
-				equalTo: "#password"
-			}
-		},
-		messages: {
-			email: {
-				required: 'Поле email обязательно для заполнения',
-				email: 'Поле email не корректно заполнено'
-			},
-			name: {
-				required: 'Имя обьязательно должно быт заполнено',
-				minlength: 'Длина имени должно быть более 3-х символов',
-			},
-			password_again: {
-				required: 'Введите пароль',
-				equalTo: "Пожалуйста, введите то же значение еще раз"
-			},
-			password: {
-				required: 'Введите пароль',
-				minlength: 'Не надежный пароль, введите минимум 5 символов',
-			},
-		}
-	});
-	$(document).ready(function () {
-		$("#inputPhone").mask("8 (999) 999-99-99");
-		$("#phone").mask("8 (999) 999-99-99");
-	});
-}
-if (formTwo) {
-	$('#form__two').validate({
-		rules: {
-			name: {
-				required: true,
-				minlength: 3,
-			},
-			text: {
-				required: true,
-				minlength: 3,
-			},
-			nomer: {
-				required: true,
-				minlength: 11,
-			},
-			password: {
-				required: true,
-				minlength: 5,
-			},
-			passwor1: {
-				required: true,
-				minlength: 5,
-			},
-			password_again: {
-				required: true,
-				equalTo: "#password"
-			}
-		},
-		messages: {
-			name: {
-				required: 'Имя обьязательно должно быт заполнено',
-				minlength: 'Длина имени должно быть более 3-х символов',
-			},
-			nomer: {
-				required: 'Соц сеть обьязательно должно быт заполнено',
-				minlength: 'Длина номера должно быть более 11-х цифров',
-			},
-			text: {
-				required: 'Форма обьязательно должно быт заполнено',
-				minlength: 'Длина имени должно быть более 3-х символов',
-			},
-			password_again: {
-				required: 'Введите пароль',
-				equalTo: "Пожалуйста, введите то же значение еще раз"
-			},
-			password: {
-				required: 'Введите пароль',
-				minlength: 'Не надежный пароль, введите минимум 5 символов',
-			},
-			password1: {
-				required: 'Введите старый пароль',
-				minlength: 'Не надежный пароль, введите минимум 5 символов',
-			},
-		}
-	});
-	$(document).ready(function () {
-		$("#phone").mask("8 (999) 999-99-99");
-	});
-}
+// if (formBlock) {
+// 	$('#form').validate({
+// 		rules: {
+// 			email: {
+// 				required: true,
+// 				email: true,
+// 			},
+// 			name: {
+// 				required: true,
+// 				minlength: 3,
+// 			},
+// 			// checked: {
+// 			// 	required: true,
+// 			// }
+// 			password: {
+// 				required: true,
+// 				minlength: 5,
+// 			},
+// 			password_again: {
+// 				required: true,
+// 				equalTo: "#password"
+// 			}
+// 		},
+// 		messages: {
+// 			email: {
+// 				required: 'Поле email обязательно для заполнения',
+// 				email: 'Поле email не корректно заполнено'
+// 			},
+// 			name: {
+// 				required: 'Имя обьязательно должно быт заполнено',
+// 				minlength: 'Длина имени должно быть более 3-х символов',
+// 			},
+// 			password_again: {
+// 				required: 'Введите пароль',
+// 				equalTo: "Пожалуйста, введите то же значение еще раз"
+// 			},
+// 			password: {
+// 				required: 'Введите пароль',
+// 				minlength: 'Не надежный пароль, введите минимум 5 символов',
+// 			},
+// 		}
+// 	});
+// 	$(document).ready(function () {
+// 		$("#inputPhone").mask("8 (999) 999-99-99");
+// 		$("#phone").mask("8 (999) 999-99-99");
+// 	});
+// }
+// if (formTwo) {
+// 	$('#form__two').validate({
+// 		rules: {
+// 			name: {
+// 				required: true,
+// 				minlength: 3,
+// 			},
+// 			text: {
+// 				required: true,
+// 				minlength: 3,
+// 			},
+// 			nomer: {
+// 				required: true,
+// 				minlength: 11,
+// 			},
+// 			password: {
+// 				required: true,
+// 				minlength: 5,
+// 			},
+// 			passwor1: {
+// 				required: true,
+// 				minlength: 5,
+// 			},
+// 			password_again: {
+// 				required: true,
+// 				equalTo: "#password"
+// 			}
+// 		},
+// 		messages: {
+// 			name: {
+// 				required: 'Имя обьязательно должно быт заполнено',
+// 				minlength: 'Длина имени должно быть более 3-х символов',
+// 			},
+// 			nomer: {
+// 				required: 'Соц сеть обьязательно должно быт заполнено',
+// 				minlength: 'Длина номера должно быть более 11-х цифров',
+// 			},
+// 			text: {
+// 				required: 'Форма обьязательно должно быт заполнено',
+// 				minlength: 'Длина имени должно быть более 3-х символов',
+// 			},
+// 			password_again: {
+// 				required: 'Введите пароль',
+// 				equalTo: "Пожалуйста, введите то же значение еще раз"
+// 			},
+// 			password: {
+// 				required: 'Введите пароль',
+// 				minlength: 'Не надежный пароль, введите минимум 5 символов',
+// 			},
+// 			password1: {
+// 				required: 'Введите старый пароль',
+// 				minlength: 'Не надежный пароль, введите минимум 5 символов',
+// 			},
+// 		}
+// 	});
+// 	$(document).ready(function () {
+// 		$("#phone").mask("8 (999) 999-99-99");
+// 	});
+// }
 
 let clickPassword = document.querySelectorAll('.registration-form__password');
 clickPassword.forEach((elem) => {
@@ -986,6 +986,8 @@ function openCart(){
 		if(cardBasket) {
 			cardBasket.innerHTML = totalItems;
 		}
+	} else {
+		cardBasket.innerHTML = '<div class="basket__block"><div class="basket-null"><div class="basket-null__img"><img src="/img/basket-cart.png" alt=""></div><div class="basket-null__content"><div class="basket-null__title">К сожалению, ваша корзина пуста</div><div class="basket-null__text"><p>Исправить это недоразумение очень просто: выберите в каталоге<br>интересующий товар<br>и нажмите кнопку «В корзину».</p></div><div class="basket-null__button"></div></div></div></div>';
 	}
 		const updateQuantityTotalPrice = (id, quantity) => {
 			cartData[id].itemCount = quantity;

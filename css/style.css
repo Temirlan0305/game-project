@@ -5275,6 +5275,33 @@ ul, p {
 .registration__tabs {
     display: none;
 }
+.basket-null {
+	display: flex;
+	align-items: center;
+	padding: 25px 20px;
+}
+.basket-null__img {
+	margin-right: 20px;
+}
+.basket-null__img img{
+	width:150px;
+	height:150px;
+}
+.basket-null__title {
+	font-size: 22px;
+	line-height: 24px;
+	font-weight: 400;
+	margin-bottom: 20px;
+}
+.basket-null__text {
+	margin-bottom: 40px;
+}
+.basket-null__text p {
+	font-size: 14px;
+	line-height:15px;
+	font-weight: 400;
+	color: #888;
+}
 
 
 @media (max-width: 1590px) {
@@ -7049,6 +7076,21 @@ ul, p {
     .pupils-image__link {
         width: 22px;
         height: 22px;
+    }
+    .basket-null__img img {
+        width: 100px;
+        height: 100px;
+    }
+    .basket-null {
+        padding: 10px;
+    }
+    .basket-null__title {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    .basket-null__text {
+        margin-bottom: 0;
+        font-size: 12px;
     }
 }
 @media (max-width: 1199.98px) {

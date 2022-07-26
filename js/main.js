@@ -1165,6 +1165,27 @@ registrationLeftBtn.forEach((elem) => {
 	});
 });
 
+
+const tabsBtnActing = document.querySelectorAll('.acting__link');
+const tabActingRow = document.querySelectorAll('.acting-center__row');
+tabsBtnActing.forEach(function (item) {
+	item.addEventListener('click', function () {
+		let currentBtn = item;
+		let tabId = currentBtn.getAttribute('data-acting');
+		let currentTab = document.querySelector(tabId);
+		if (!currentBtn.classList.contains('active')) {
+			tabsBtnActing.forEach(function (item) {
+				item.classList.remove('active');
+			});
+			tabActingRow.forEach(function (item) {
+				item.classList.remove('active');
+			});
+			currentBtn.classList.add('active');
+			currentTab.classList.add('active');
+		}
+	});
+});
+
 // methodDelivery.	
 
 // $('#delivery option').each(function(elem) {

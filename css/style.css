@@ -4930,6 +4930,7 @@ ul, p {
 
 .select-two__wrapper {
 	position: relative;
+    width: 100%;
 }
 .select-two__wrapper::before {
 	content: "";
@@ -4944,6 +4945,9 @@ ul, p {
     height: 8px;
     margin-top: -4px;
     width: 16px;
+}
+.select-two__wrapper.icon-wraper::before {
+    background-image: url(../img/acting-icon.svg);
 }
 .select__two:focus .select-two__wrapper::before {
     transform: rotate(180deg);

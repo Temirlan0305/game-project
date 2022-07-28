@@ -987,7 +987,9 @@ function openCart(){
 			cardBasket.innerHTML = totalItems;
 		}
 	} else {
-		cardBasket.innerHTML = '<div class="basket__block"><div class="basket-null"><div class="basket-null__img"><img src="/img/basket-cart.png" alt=""></div><div class="basket-null__content"><div class="basket-null__title">К сожалению, ваша корзина пуста</div><div class="basket-null__text"><p>Исправить это недоразумение очень просто: выберите в каталоге<br>интересующий товар<br>и нажмите кнопку «В корзину».</p></div><div class="basket-null__button"></div></div></div></div>';
+		if(cardBasket) {
+			cardBasket.innerHTML = '<div class="basket__block"><div class="basket-null"><div class="basket-null__img"><img src="/img/basket-cart.png" alt=""></div><div class="basket-null__content"><div class="basket-null__title">К сожалению, ваша корзина пуста</div><div class="basket-null__text"><p>Исправить это недоразумение очень просто: выберите в каталоге<br>интересующий товар<br>и нажмите кнопку «В корзину».</p></div><div class="basket-null__button"></div></div></div></div>';
+		}
 	}
 		const updateQuantityTotalPrice = (id, quantity) => {
 			cartData[id].itemCount = quantity;
@@ -1020,7 +1022,9 @@ function openCart(){
 			openCart();
 			if (Object.keys(cartData).length == 0) {
 				localStorage.removeItem('cart');
-				cardBasket.innerHTML = '<div class="basket__block"><div class="basket-null"><div class="basket-null__img"><img src="/img/basket-cart.png" alt=""></div><div class="basket-null__content"><div class="basket-null__title">К сожалению, ваша корзина пуста</div><div class="basket-null__text"><p>Исправить это недоразумение очень просто: выберите в каталоге<br>интересующий товар<br>и нажмите кнопку «В корзину».</p></div><div class="basket-null__button"></div></div></div></div>';
+				if(cardBasket) {
+					cardBasket.innerHTML = '<div class="basket__block"><div class="basket-null"><div class="basket-null__img"><img src="/img/basket-cart.png" alt=""></div><div class="basket-null__content"><div class="basket-null__title">К сожалению, ваша корзина пуста</div><div class="basket-null__text"><p>Исправить это недоразумение очень просто: выберите в каталоге<br>интересующий товар<br>и нажмите кнопку «В корзину».</p></div><div class="basket-null__button"></div></div></div></div>';
+				}
 			}
 			// if(cartData[id] == undefined) {
 			// 	localStorage.clear();
